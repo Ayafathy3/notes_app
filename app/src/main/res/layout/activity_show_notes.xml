@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/saveShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="save"
+        android:textColor="#801212"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/titleShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@android:color/transparent"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/moreShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="more"
+        android:textColor="#801212"
+        android:textSize="@dimen/_18sdp" />
+
+    <EditText
+        android:id="@+id/subjectShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleShow"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@android:color/transparent"
+        android:text="i want to be junior android "
+        android:textColor="#a0100707"
+        android:textSize="@dimen/_18sdp" />
+
+    <ImageView
+        android:id="@+id/imageShow"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_below="@+id/subjectShow"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relative_butoom_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:background="#e4e2e2"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/play_button_show"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="#ffffff"
+            android:src="@drawable/play"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginRight="@dimen/_8sdp">
+
+    <ImageView
+        android:id="@+id/image_show"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/subject_notes"
+        android:layout_toLeftOf="@+id/checkbox"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/title_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Title"
+        android:textColor="#f4100707"
+        android:textSize="@dimen/_18sdp" />
+
+    <TextView
+        android:id="@+id/subject_notes"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_notes"
+        android:layout_margin="@dimen/_4sdp"
+        android:lines="2"
+        android:text="i want to be musilm "
+        android:textColor="#fd837f7f"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject_notes"
+        android:text="9:50"
+        android:textColor="#423d3d" />
+
+    <ImageView
+        android:id="@+id/micImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject_notes"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_toEndOf="@+id/date"
+        android:src="@drawable/voice"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:buttonTint="#d42b2b" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="#776464" />
+</RelativeLayout>

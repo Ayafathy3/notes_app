@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#cfc2c2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+
+            android:id="@+id/checkallbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:buttonTint="#733a8c"
+            android:text="all"
+            android:textColor="#733a8c"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_toEndOf="@+id/checkallbox"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#733a8c"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toStartOf="@+id/delete"
+            android:gravity="center"
+            android:text="share"
+            android:textColor="#733a8c"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="delete"
+            android:textColor="#733a8c"
+            android:textSize="@dimen/_18sdp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
